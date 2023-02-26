@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "595434455755",
+    "project_id": "crpy-crypty",
+    "storage_bucket": "crpy-crypty.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595434455755:android:8b1bca21e105c6e4f6514e",
+        "android_client_info": {
+          "package_name": "com.example.crpy_crpty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595434455755-4aho53r0q1idicvc3d7tjolvl3jfp9l4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.crpy_crpty",
+            "certificate_hash": "cb87107db15fe25ab46bd1ff61d62abc4c9299c0"
+          }
+        },
+        {
+          "client_id": "595434455755-2a4kdgmcjdf0604ap59cme2p37khj10n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn8hAIodeE6oFJMztPhEap-w7KviIhgl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595434455755-2a4kdgmcjdf0604ap59cme2p37khj10n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
