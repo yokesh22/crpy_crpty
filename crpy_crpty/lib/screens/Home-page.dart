@@ -2,10 +2,9 @@ import 'package:crpy_crpty/constants.dart';
 import 'package:crpy_crpty/screens/welcome.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 import '../services/sharedPref.dart';
+import 'Search-Page.dart';
 
 class HomePageScreen extends StatefulWidget {
   const HomePageScreen({super.key});
@@ -48,6 +47,19 @@ class _HomePageScreenState extends State<HomePageScreen> {
             ];
           })
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: primary_color,
+        // isExtended: false,
+        child: Icon(
+          Icons.search_rounded,
+          color: Colors.white,
+          size: 25,
+        ),
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => SearchScreen()));
+        },
       ),
     );
   }

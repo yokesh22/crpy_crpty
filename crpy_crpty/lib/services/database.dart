@@ -4,7 +4,10 @@ class DatabaseConnection {
   FirebaseFirestore firestore = FirebaseFirestore.instance;
 
   saveUser(phoneNo) async {
-    await firestore.collection('user').add({'phone': phoneNo});
+    await firestore
+        .collection('user')
+        .doc(phoneNo)
+        .set({'phone': phoneNo, 'createdAt': DateTime.now()});
   }
 
   getUser(String currentuser) async {

@@ -26,6 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
   String name = "India";
   bool showOTP = false;
   bool alertshow = true;
+  bool isLoading = false;
 
   void setCountryData(CountryModel country) {
     setState(() {
@@ -156,6 +157,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       await SharedPreferenceFunctions.userLoggedIn(true);
                       await database.saveUser(code + phone_controller.text);
 
+                      // ignore: use_build_context_synchronously
                       Navigator.of(context).pushAndRemoveUntil(
                           MaterialPageRoute(
                               builder: (context) => const HomePageScreen()),
